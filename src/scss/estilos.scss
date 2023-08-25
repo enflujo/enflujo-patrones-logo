@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #30cac073;
+  color: #130808;
+}
+
+body {
+  background-color: #170f16;
+  color: rgb(253, 223, 249);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#lienzo {
+  margin-top: 10px;
+  background-color: rgb(240, 240, 240);
+}
+
+input[type='number'] {
+  background-color: #ec41c9;
+  border: none;
+  outline: none;
+  padding: 0.3em;
+  font-size: 0.7em;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#opciones {
+  padding: 1em;
+}
