@@ -42,7 +42,7 @@ function inicio() {
 
   const variaciones: Variacion[] = new Array(53).fill(0).map((n, i) => {
     return {
-      ruta: `/logos/variaciones/transparente/${String(i).padStart(4, '0')}.png`,
+      ruta: `${import.meta.env.BASE_URL}/logos/variaciones/transparente/${String(i).padStart(4, '0')}.png`,
       img: null,
       dims: { ancho: 0, alto: 0 },
     };
@@ -85,12 +85,12 @@ function inicio() {
         };
 
         if (img.naturalWidth !== anchoImg) {
-          console.log(`de ${anchoImg} a ${img.naturalWidth}`);
+          // console.log(`de ${anchoImg} a ${img.naturalWidth}`);
           anchoImg = img.naturalWidth;
         }
 
         if (img.naturalHeight !== altoImg) {
-          console.log(`de ${altoImg} a ${img.naturalHeight}`);
+          // console.log(`de ${altoImg} a ${img.naturalHeight}`);
           altoImg = img.naturalHeight;
         }
 
